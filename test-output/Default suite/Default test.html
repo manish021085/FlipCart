@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 20 13:32:14 IST 2019</td>
+<td>Started on:</td><td>Sat Jul 27 19:29:45 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>322 seconds (322388 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31474 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='flipcart.E2E_SECOND.HomePageTest.basePageTest()'><b>basePageTest</b><br>Test class: flipcart.E2E_SECOND.HomePageTest</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;/samsung-mobile-store?otracker=nmenu_sub_Electronics_0_Samsung&quot;&gt; could not be scrolled into view
+<td title='flipcart.E2E_SECOND.HomepageLoginTest.validateloginTest()'><b>validateloginTest</b><br>Test class: flipcart.E2E_SECOND.HomepageLoginTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;password&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-JRH31QL&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+System info: host: &apos;DESKTOP-JRH31QL&apos;, ip: &apos;192.168.29.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17908, moz:profile: C:\Users\Cimple\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9c746e1e-f22d-43bb-ba9c-31c62f08a2d3
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11764, moz:profile: C:\Users\Cimple\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 968e4062-8b50-41c1-a66a-4559e944a5af
+*** Element info: {Using=xpath, value=//input[@type=&apos;password&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -92,16 +94,12 @@ Session ID: 9c746e1e-f22d-43bb-ba9c-31c62f08a2d3
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at pagefactory.HomePage.getElectroicsOption(HomePage.java:43)
-	at flipcart.E2E_SECOND.HomePageTest.basePageTest(HomePageTest.java:32)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pagefactory.HomepageLogin.getPassword(HomepageLogin.java:35)
+	at flipcart.E2E_SECOND.HomepageLoginTest.validateloginTest(HomepageLoginTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -126,13 +124,15 @@ Session ID: 9c746e1e-f22d-43bb-ba9c-31c62f08a2d3
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace443491171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace443491171'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;/samsung-mobile-store?otracker=nmenu_sub_Electronics_0_Samsung&quot;&gt; could not be scrolled into view
+</pre></div><a href='#' onClick='toggleBox("stack-trace1345900725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1345900725'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type=&apos;password&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-JRH31QL&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+System info: host: &apos;DESKTOP-JRH31QL&apos;, ip: &apos;192.168.29.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17908, moz:profile: C:\Users\Cimple\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9c746e1e-f22d-43bb-ba9c-31c62f08a2d3
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11764, moz:profile: C:\Users\Cimple\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 968e4062-8b50-41c1-a66a-4559e944a5af
+*** Element info: {Using=xpath, value=//input[@type=&apos;password&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -143,16 +143,12 @@ Session ID: 9c746e1e-f22d-43bb-ba9c-31c62f08a2d3
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at pagefactory.HomePage.getElectroicsOption(HomePage.java:43)
-	at flipcart.E2E_SECOND.HomePageTest.basePageTest(HomePageTest.java:32)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pagefactory.HomepageLogin.getPassword(HomepageLogin.java:35)
+	at flipcart.E2E_SECOND.HomepageLoginTest.validateloginTest(HomepageLoginTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -178,8 +174,21 @@ Session ID: 9c746e1e-f22d-43bb-ba9c-31c62f08a2d3
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>7</td>
-<td>flipcart.E2E_SECOND.HomePageTest@5276e6b0</td></tr>
+<td>0</td>
+<td>flipcart.E2E_SECOND.HomepageLoginTest@6d78f375</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='flipcart.E2E_SECOND.HomepageLoginTest.validateLoginPageTitleTest()'><b>validateLoginPageTitleTest</b><br>Test class: flipcart.E2E_SECOND.HomepageLoginTest</td>
+<td></td>
+<td>0</td>
+<td>flipcart.E2E_SECOND.HomepageLoginTest@6d78f375</td></tr>
 </table><p>
 </body>
 </html>

@@ -31,22 +31,26 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">322.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">31.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">flipcart.E2E_SECOND.HomePageTest</td><td><a href="#m1"><b>basePageTest</b>  </a></td><td class="numi">1</td><td>1561018014736</td><td class="numi">7894</td></tr>
+<tr class="failedodd"><td rowspan="1">flipcart.E2E_SECOND.HomepageLoginTest</td><td><a href="#m1"><b>validateloginTest</b>  </a></td><td class="numi">1</td><td>1564236016652</td><td class="numi">620</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">flipcart.E2E_SECOND.HomepageLoginTest</td><td><a href="#m2"><b>validateLoginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1564236000904</td><td class="numi">63</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">flipcart.E2E_SECOND.HomePageTest:basePageTest</h2>
+<h2 id="m1">flipcart.E2E_SECOND.HomepageLoginTest:validateloginTest</h2>
 <div style="padding-left:3em">
-<p>Element &lt;a href=&quot;/samsung-mobile-store?otracker=nmenu_sub_Electronics_0_Samsung&quot;&gt; could not be scrolled into view
+<p>Unable to locate element: //input[@type=&apos;password&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-JRH31QL&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+System info: host: &apos;DESKTOP-JRH31QL&apos;, ip: &apos;192.168.29.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 17908, moz:profile: C:\Users\Cimple\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9c746e1e-f22d-43bb-ba9c-31c62f08a2d3</p>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11764, moz:profile: C:\Users\Cimple\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 968e4062-8b50-41c1-a66a-4559e944a5af
+*** Element info: {Using=xpath, value=//input[@type=&apos;password&apos;]}</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -57,17 +61,15 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 <br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-<br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
-<br/>at pagefactory.HomePage.getElectroicsOption(HomePage.java:43)
-<br/>at flipcart.E2E_SECOND.HomePageTest.basePageTest(HomePageTest.java:32)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at pagefactory.HomepageLogin.getPassword(HomepageLogin.java:35)
+<br/>at flipcart.E2E_SECOND.HomepageLoginTest.validateloginTest(HomepageLoginTest.java:32)
 <br/>25 lines not shown
 </div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">flipcart.E2E_SECOND.HomepageLoginTest:validateLoginPageTitleTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
