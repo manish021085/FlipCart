@@ -39,6 +39,7 @@ public class HomepageLoginTest extends TestBase{
 		hpl=new HomepageLogin(driver);
 		System.out.println(hpl.getTitle());
 		Assert.assertEquals(hpl.getTitle(), "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!");
+		System.out.println("HomePage Title Matched");
 		
 	}
 	
